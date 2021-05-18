@@ -22,11 +22,11 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created | n/a | `list` | n/a | yes |
 | allocated\_storage | Storage size in GB | `number` | n/a | yes |
 | allow\_cidrs | List of CIDRs to allow connection to this DB | `list` | `[]` | no |
 | allow\_security\_group\_ids | List of Security Group IDs to allow connection to this DB | `list` | n/a | yes |
 | apply\_immediately | n/a | `bool` | `true` | no |
+| availability\_zones | A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created | `list` | n/a | yes |
 | backup | Enables automatic backup with AWS Backup | `bool` | n/a | yes |
 | backup\_retention\_periodr | n/a | `string` | `"5"` | no |
 | database\_name | DB name | `string` | n/a | yes |

@@ -36,7 +36,7 @@ resource "aws_rds_cluster" "rds_cluster" {
   engine_mode = var.engine_mode
   engine_version = var.engine_version
   engine = var.engine
-  snapshot_identifier = var.final_snapshot_identifier != "" ? var.final_snapshot_identifier : null
+  snapshot_identifier = var.snapshot_identifier != "" ? var.snapshot_identifier : null
   kms_key_id  = var.kms_key_arn
   storage_encrypted = var.storage_encrypted
   port = var.port

@@ -67,6 +67,10 @@ variable "apply_immediately" {
   default = true
 }
 
+variable "deletion_protection" {
+  type = bool
+  default = true
+}
 variable "publicly_accessible" {
   type = bool
   default = false
@@ -77,6 +81,10 @@ variable "snapshot_identifier" {
   default = ""
 }
 
+variable "engine_mode" {
+  type = string
+  default = ""
+}
 
 variable "backup_retention_period" {
   type = string

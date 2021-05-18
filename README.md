@@ -33,7 +33,9 @@
 | db\_cluster\_parameter\_group\_name | n/a | `string` | `""` | no |
 | db\_subnet\_group\_id | n/a | `string` | n/a | yes |
 | db\_subnet\_group\_name | n/a | `string` | `""` | no |
+| deletion\_protection | n/a | `bool` | `true` | no |
 | engine | n/a | `string` | n/a | yes |
+| engine\_mode | n/a | `string` | `""` | no |
 | engine\_version | n/a | `string` | n/a | yes |
 | environment\_name | Environment name to use as a prefix to this DB | `string` | n/a | yes |
 | identifier | Name of this cluster Instances | `string` | n/a | yes |

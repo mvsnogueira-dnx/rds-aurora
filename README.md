@@ -22,17 +22,17 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| allocated\_storage | Storage size in GB | `number` | n/a | yes |
 | allow\_cidrs | List of CIDRs to allow connection to this DB | `list` | `[]` | no |
 | allow\_security\_group\_ids | List of Security Group IDs to allow connection to this DB | `list` | n/a | yes |
 | apply\_immediately | n/a | `bool` | `true` | no |
 | availability\_zones | A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created | `list` | n/a | yes |
 | backup | Enables automatic backup with AWS Backup | `bool` | n/a | yes |
-| backup\_retention\_periodr | n/a | `string` | `"5"` | no |
+| backup\_retention\_period | n/a | `string` | `"5"` | no |
+| cluster\_identifier | n/a | `string` | `""` | no |
 | database\_name | DB name | `string` | n/a | yes |
-| db\_cluster\_parameter\_group\_name | n/a | `string` | n/a | yes |
+| db\_cluster\_parameter\_group\_name | n/a | `string` | `""` | no |
 | db\_subnet\_group\_id | n/a | `string` | n/a | yes |
-| db\_subnet\_group\_name | n/a | `string` | n/a | yes |
+| db\_subnet\_group\_name | n/a | `string` | `""` | no |
 | engine | n/a | `string` | n/a | yes |
 | engine\_version | n/a | `string` | n/a | yes |
 | environment\_name | Environment name to use as a prefix to this DB | `string` | n/a | yes |
@@ -43,8 +43,8 @@
 | parameter\_group\_name | n/a | `string` | n/a | yes |
 | performance\_insights\_enabled | Enables or not performance\_insights | `bool` | `false` | no |
 | port | n/a | `number` | n/a | yes |
-| preferred\_backup\_window | n/a | `string` | n/a | yes |
-| preferred\_maintenance\_window | n/a | `string` | n/a | yes |
+| preferred\_backup\_window | n/a | `string` | `""` | no |
+| preferred\_maintenance\_window | n/a | `string` | `""` | no |
 | publicly\_accessible | n/a | `bool` | `false` | no |
 | retention | Snapshot retention period in days | `number` | n/a | yes |
 | snapshot\_identifier | n/a | `string` | `""` | no |

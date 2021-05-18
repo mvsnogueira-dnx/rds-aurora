@@ -109,10 +109,6 @@ variable "db_subnet_group_id" {
   type = string
 }
 
-variable "engine_version" {
-  type = string
-}
-
 variable "preferred_backup_window" {
   type = string
 }

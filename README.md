@@ -53,10 +53,7 @@
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| endpoint | n/a |
-| identifier | n/a |
+No output.
 
 <!--- END_TF_DOCS --->
 

@@ -11,6 +11,7 @@ variable "environment_name" {
 variable "allow_security_group_ids" {
   type = list
   description = "List of Security Group IDs to allow connection to this DB"
+  default = []
 }
 
 variable "allow_cidrs" {

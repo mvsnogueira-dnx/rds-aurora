@@ -55,10 +55,12 @@ variable "parameter_group_name" {
 
 variable "db_cluster_parameter_group_name" {
   type = string
+  default = ""
 }
 
 variable "db_subnet_group_name" {
   type = string
+  default = ""
 }
 variable "apply_immediately" {
   type = bool
@@ -76,13 +78,9 @@ variable "snapshot_identifier" {
 }
 
 
-variable "backup_retention_periodr" {
+variable "backup_retention_period" {
   type = string
   default = "5"
-}
-variable "allocated_storage" {
-  type = number
-  description = "Storage size in GB"
 }
 
 variable "storage_encrypted" {
@@ -111,10 +109,12 @@ variable "db_subnet_group_id" {
 
 variable "preferred_backup_window" {
   type = string
+  default = ""
 }
 
 variable "preferred_maintenance_window" {
   type = string
+  default = ""
 }
 
 variable "performance_insights_enabled" {
@@ -126,4 +126,9 @@ variable "performance_insights_enabled" {
 variable "availability_zones" {
   type = list
   description = "A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created"
+}
+
+variable "cluster_identifier" {
+  type = string
+  default = ""
 }

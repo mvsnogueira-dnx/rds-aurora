@@ -123,6 +123,7 @@ variable "performance_insights_enabled" {
   default = false
 }
 
-variable "A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created" {
+variable "availability_zones" {
   type = list
+  description = "A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created"
 }

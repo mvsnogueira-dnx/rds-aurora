@@ -25,6 +25,10 @@ variable "master_username" {
   description = "DB User"
 }
 
+variable "count" {
+  type = string
+  description = "DB User"
+}
 variable "database_name" {
   type = string
   description = "DB name"

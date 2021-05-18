@@ -23,7 +23,7 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | allow\_cidrs | List of CIDRs to allow connection to this DB | `list` | `[]` | no |
-| allow\_security\_group\_ids | List of Security Group IDs to allow connection to this DB | `list` | n/a | yes |
+| allow\_security\_group\_ids | List of Security Group IDs to allow connection to this DB | `list` | `[]` | no |
 | apply\_immediately | n/a | `bool` | `true` | no |
 | availability\_zones | A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created | `list` | n/a | yes |
 | backup | Enables automatic backup with AWS Backup | `bool` | n/a | yes |

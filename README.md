@@ -29,6 +29,7 @@
 | backup | Enables automatic backup with AWS Backup | `bool` | n/a | yes |
 | backup\_retention\_period | n/a | `string` | `"5"` | no |
 | cluster\_identifier | n/a | `string` | `""` | no |
+| count | DB User | `string` | n/a | yes |
 | database\_name | DB name | `string` | n/a | yes |
 | db\_cluster\_parameter\_group\_name | n/a | `string` | `""` | no |
 | db\_subnet\_group\_id | n/a | `string` | n/a | yes |

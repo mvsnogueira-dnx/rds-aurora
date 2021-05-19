@@ -40,6 +40,7 @@
 | environment\_name | Environment name to use as a prefix to this DB | `string` | n/a | yes |
 | identifier | Name of this cluster Instances | `string` | n/a | yes |
 | instance\_class | n/a | `string` | n/a | yes |
+| instance\_number | n/a | `string` | `""` | no |
 | kms\_key\_arn | KMS Key ARN to use a CMK instead of default shared key, when storage\_encrypted is true | `string` | `""` | no |
 | master\_username | DB User | `string` | n/a | yes |
 | parameter\_group\_name | n/a | `string` | n/a | yes |

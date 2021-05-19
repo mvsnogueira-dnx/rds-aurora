@@ -10,7 +10,7 @@ variable "environment_name" {
 
 variable "allow_security_group_ids" {
   type = list
-  description = "List of Security Group IDs to allow connection to this DB"
+  description = "List of Security Group IDs to allow connection to this DB:"
   default = []
 }
 
@@ -29,7 +29,7 @@ variable "database_name" {
   type = string
   description = "DB name"
 }
-variable "retention" {
+variable "retention" {rm 
   type = number
   description = "Snapshot retention period in days"
 }

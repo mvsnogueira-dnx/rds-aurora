@@ -29,7 +29,7 @@ variable "database_name" {
   type = string
   description = "DB name"
 }
-variable "retention" {rm 
+variable "retention" {
   type = number
   description = "Snapshot retention period in days"
 }

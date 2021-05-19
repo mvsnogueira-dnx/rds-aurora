@@ -4,7 +4,7 @@ resource "random_string" "rds_db_password" {
 }
 
 resource "aws_rds_cluster_instance" "cluster_instances" {
-  count                   = var.count
+  count                   = var.instance_number # Number of RDS instances
   identifier              = "${var.environment_name}-${var.identifier}-${count.index}"
   cluster_identifier      = aws_rds_cluster.rds_cluster.id
   
@@ -15,7 +15,6 @@ resource "aws_rds_cluster_instance" "cluster_instances" {
   db_subnet_group_name    = var.db_subnet_group_id
   db_parameter_group_name = var.parameter_group_name
   apply_immediately       = var.apply_immediately
-  backup_retention_period = var.backup_retention_period
   preferred_backup_window = var.preferred_backup_window
   preferred_maintenance_window = var.preferred_maintenance_window
   performance_insights_enabled  = var.performance_insights_enabled 

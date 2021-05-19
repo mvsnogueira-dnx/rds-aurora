@@ -92,6 +92,12 @@ variable "backup_retention_period" {
   default = "5"
 }
 
+variable "instance_number" {
+  type = string
+  default = ""
+}
+
+
 variable "storage_encrypted" {
   type = bool
   description = "Enables storage encryption"

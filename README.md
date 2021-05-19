@@ -5,7 +5,57 @@
 
 <!--- BEGIN_TF_DOCS --->
 
-Error: Argument or block definition required: An argument or block definition is required here. To set an argument, use the equals sign "=" to introduce the argument value.
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.13.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+| random | n/a |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| allow\_cidrs | List of CIDRs to allow connection to this DB | `list` | `[]` | no |
+| allow\_security\_group\_ids | List of Security Group IDs to allow connection to this DB: | `list` | `[]` | no |
+| apply\_immediately | n/a | `bool` | `true` | no |
+| availability\_zones | A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created | `list` | n/a | yes |
+| backup | Enables automatic backup with AWS Backup | `bool` | n/a | yes |
+| backup\_retention\_period | n/a | `string` | `"5"` | no |
+| cluster\_identifier | n/a | `string` | `""` | no |
+| database\_name | DB name | `string` | n/a | yes |
+| db\_cluster\_parameter\_group\_name | n/a | `string` | `""` | no |
+| db\_subnet\_group\_id | n/a | `string` | n/a | yes |
+| db\_subnet\_group\_name | n/a | `string` | `""` | no |
+| deletion\_protection | n/a | `bool` | `true` | no |
+| engine | n/a | `string` | n/a | yes |
+| engine\_mode | n/a | `string` | `""` | no |
+| engine\_version | n/a | `string` | n/a | yes |
+| environment\_name | Environment name to use as a prefix to this DB | `string` | n/a | yes |
+| identifier | Name of this cluster Instances | `string` | n/a | yes |
+| instance\_class | n/a | `string` | n/a | yes |
+| kms\_key\_arn | KMS Key ARN to use a CMK instead of default shared key, when storage\_encrypted is true | `string` | `""` | no |
+| master\_username | DB User | `string` | n/a | yes |
+| parameter\_group\_name | n/a | `string` | n/a | yes |
+| performance\_insights\_enabled | Enables or not performance\_insights | `bool` | `false` | no |
+| port | n/a | `number` | n/a | yes |
+| preferred\_backup\_window | n/a | `string` | `""` | no |
+| preferred\_maintenance\_window | n/a | `string` | `""` | no |
+| publicly\_accessible | n/a | `bool` | `false` | no |
+| retention | Snapshot retention period in days | `number` | n/a | yes |
+| snapshot\_identifier | n/a | `string` | `""` | no |
+| storage\_encrypted | Enables storage encryption | `bool` | n/a | yes |
+| vpc\_id | n/a | `string` | n/a | yes |
+
+## Outputs
+
+No output.
 
 <!--- END_TF_DOCS --->
 
